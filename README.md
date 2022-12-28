@@ -1,0 +1,1 @@
+# multitech-gateway-tx-power-tables
