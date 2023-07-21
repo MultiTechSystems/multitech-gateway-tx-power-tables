@@ -14,9 +14,8 @@
     "device": "/dev/spidev0.0",
     "lorawan_public": true,
     "pps": true,
-    "radio_0": {"enable": true,"freq": 868500000,"rssi_offset": -214.5,"tx_enable": true,"type": "SX1250"},
-    "radio_1": {"enable": true,"freq": 867500000,"rssi_offset": -214.5,"tx_enable": false,"type": "SX1250"},
-    "tx_gain_lut":[
+    "radio_0": {"enable": true,"freq": 868500000,"rssi_offset": -214.5,"tx_enable": true,"type": "SX1250",
+      "tx_gain_lut":[
         {"rf_power": 10, "pa_gain": 0, "pwr_idx": 12},
         {"rf_power": 11, "pa_gain": 0, "pwr_idx": 13},
         {"rf_power": 12, "pa_gain": 0, "pwr_idx": 14},
@@ -33,7 +32,9 @@
         {"rf_power": 25, "pa_gain": 1, "pwr_idx": 8},
         {"rf_power": 26, "pa_gain": 1, "pwr_idx": 11},
         {"rf_power": 27, "pa_gain": 1, "pwr_idx": 14}
-    ]
+      ]
+    },
+    "radio_1": {"enable": true,"freq": 867500000,"rssi_offset": -214.5,"tx_enable": false,"type": "SX1250"}
   },
   "station_conf": {
     "TC_TIMEOUT": "2s",
