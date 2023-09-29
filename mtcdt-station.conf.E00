@@ -37,7 +37,6 @@
     "radio_1": {"enable": true,"freq": 867500000,"rssi_offset": -214.5,"tx_enable": false,"type": "SX1250"}
   },
   "station_conf": {
-    "TC_TIMEOUT": "2s",
     "euiprefix": "::0",
     "log_file": "stderr",
     "log_level": "INFO",
