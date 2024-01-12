@@ -76,7 +76,7 @@
     },
 
     "gateway_conf": {
-        "gateway_ID": "AA555A0000000000",
+        "gateway_ID": "<WILL-BE-AUTO-REPLACED-WITH-LORA-EUI>",
         "server_address": "localhost",
         "serv_port_up": 1730,
         "serv_port_down": 1730,
