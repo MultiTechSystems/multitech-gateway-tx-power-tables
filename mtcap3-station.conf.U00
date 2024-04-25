@@ -13,7 +13,7 @@
     "clksrc": 0,
     "device": "/dev/spidev1.0",
     "lorawan_public": true,
-    "pps": true,
+    "pps": false,
     "radio_0": {"enable": true,"freq": 902700000,"rssi_offset": -214.5,"tx_enable": true,"type": "SX1250",
       "tx_gain_lut":[
         {"rf_power": 11, "pa_gain": 0, "pwr_idx": 14},
