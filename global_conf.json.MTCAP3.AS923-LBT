@@ -22,17 +22,28 @@
                 "pace_s": 10
             },
             "lbt": {
-                "enable": false
+                "enable": true,
+                "rssi_target": -80,
+                "channels":[
+                    { "freq_hz": 923200000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 923400000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 923600000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 922200000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 922400000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 922600000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 922800000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 },
+                    { "freq_hz": 923000000, "bandwidth": 125000, "scan_time_us": 5000,  "transmit_time_ms": 4000 }
+                ]
             }
         },
         "radio_0": {
             "enable": true,
             "type": "SX1250",
-            "freq": 915600000,
+            "freq": 923600000,
             "rssi_offset": -215.4,
             "rssi_tcomp": {"coeff_a": 0, "coeff_b": 0, "coeff_c": 20.41, "coeff_d": 2162.56, "coeff_e": 0},
             "tx_enable": true,
-            "tx_freq_min": 915000000,
+            "tx_freq_min": 920000000,
             "tx_freq_max": 928000000,
             "tx_gain_lut":[
                 {"rf_power": 11, "pa_gain": 0, "pwr_idx": 15},
@@ -56,7 +67,7 @@
         "radio_1": {
             "enable": true,
             "type": "SX1250",
-            "freq": 916400000,
+            "freq": 922600000,
             "rssi_offset": -215.4,
             "rssi_tcomp": {"coeff_a": 0, "coeff_b": 0, "coeff_c": 20.41, "coeff_d": 2162.56, "coeff_e": 0},
             "tx_enable": false
@@ -65,14 +76,14 @@
         "chan_multiSF_0": {"enable": true, "radio": 0, "if": -400000},
         "chan_multiSF_1": {"enable": true, "radio": 0, "if": -200000},
         "chan_multiSF_2": {"enable": true, "radio": 0, "if":  0},
-        "chan_multiSF_3": {"enable": true, "radio": 0, "if":  200000},
-        "chan_multiSF_4": {"enable": true, "radio": 1, "if": -400000},
-        "chan_multiSF_5": {"enable": true, "radio": 1, "if": -200000},
-        "chan_multiSF_6": {"enable": true, "radio": 1, "if":  0},
-        "chan_multiSF_7": {"enable": true, "radio": 1, "if":  200000},
-        "chan_Lora_std":  {"enable": true, "radio": 0, "if":  300000, "bandwidth": 500000, "spread_factor": 8,
+        "chan_multiSF_3": {"enable": true, "radio": 1, "if": -400000},
+        "chan_multiSF_4": {"enable": true, "radio": 1, "if": -200000},
+        "chan_multiSF_5": {"enable": true, "radio": 1, "if":  0},
+        "chan_multiSF_6": {"enable": true, "radio": 1, "if":  200000},
+        "chan_multiSF_7": {"enable": true, "radio": 1, "if":  400000},
+        "chan_Lora_std":  {"enable": true, "radio": 0, "if":  0, "bandwidth": 250000, "spread_factor": 7,
                            "implicit_hdr": false, "implicit_payload_length": 17, "implicit_crc_en": false, "implicit_coderate": 1},
-        "chan_FSK":       {"enable": false, "radio": 1, "if":  300000, "bandwidth": 125000, "datarate": 50000}
+        "chan_FSK":       {"enable": true, "radio": 0, "if": -200000, "bandwidth": 125000, "datarate": 50000}
     },
 
     "gateway_conf": {
@@ -98,11 +109,10 @@
         "ref_altitude": 0,
 
         "beacon_period": 0,
-        "beacon_freq_hz": 923300000,
-        "beacon_freq_step" : 600000,
-        "beacon_datarate": 12,
-        "beacon_bw_hz": 500000,
-        "beacon_power": 24,
+        "beacon_freq_hz": 923400000,
+        "beacon_datarate": 9,
+        "beacon_bw_hz": 125000,
+        "beacon_power": 13,
         "beacon_infodesc": 0
     }
 }
