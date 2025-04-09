@@ -1,6 +1,5 @@
 {
     "tx_gain_lut":[
-                {"rf_power":  9, "pa_gain": 0, "pwr_idx": 14},
                 {"rf_power": 10, "pa_gain": 0, "pwr_idx": 15},
                 {"rf_power": 11, "pa_gain": 0, "pwr_idx": 16},
                 {"rf_power": 12, "pa_gain": 0, "pwr_idx": 17},

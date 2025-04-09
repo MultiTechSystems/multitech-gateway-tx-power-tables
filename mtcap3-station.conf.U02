@@ -16,7 +16,6 @@
     "pps": false,
     "radio_0": {"enable": true,"freq": 902700000,"rssi_offset": -214.5,"tx_enable": true,"type": "SX1250",
       "tx_gain_lut":[
-          {"rf_power":  9, "pa_gain": 0, "pwr_idx": 14},
           {"rf_power": 10, "pa_gain": 0, "pwr_idx": 15},
           {"rf_power": 11, "pa_gain": 0, "pwr_idx": 16},
           {"rf_power": 12, "pa_gain": 0, "pwr_idx": 17},
