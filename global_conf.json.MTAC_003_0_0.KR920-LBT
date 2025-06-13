@@ -13,7 +13,7 @@
         },
         "sx1261_conf": {
             "spi_path": "/dev/spidev0.1",
-            "rssi_offset": 20,
+            "rssi_offset": 8,
             "spectral_scan": {
                 "enable": false,
                 "freq_start": 867100000,
